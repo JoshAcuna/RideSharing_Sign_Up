@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Share Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="registrationForm">
+            <h1>User Registration</h1>
+            <!--Email-->
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" type="text" required>
+                <div id="emailError" class="error"></div>
+            </div>
+            <!--password-->
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input id="password" type="password" required>
+                <div id="passwordError" class="error"></div>
+            </div>
+            <!--Confirmed Password-->
+            <div class="input-control">
+                <label for="confirmPassword">Confirm Password</label>
+                <input id="confirmPassword" type="password" required>
+                <div id="confirmPasswordError" class="error"></div>
+            </div>
+            <!--Register-->
+            <button type="button" onclick="validateRegistration()">Register</button>
+
+            <div id="outputMessage" class="output"></div>
+        </form>
+    </div>
+</body>
+</html>
+
